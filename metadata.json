@@ -1,0 +1,6 @@
+{
+  "name": "fudgeko Chocolate Fudge, Surat",
+  "description": "Fudgeko is our signature rich, creamy, and ultra-smooth homemade chocolate fudge. Freshly whipped in a home kitchen under pristine hygienic conditions. It melts in your mouth with an intense chocolate punch that will leave you wanting more!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
