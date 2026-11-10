@@ -58,14 +58,20 @@ export default function App() {
 
       <main className="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="space-y-12">
-          <div className="text-center max-w-2xl mx-auto space-y-4">
+          <div className="text-center max-w-3xl mx-auto space-y-4">
             <span className="text-xs font-extrabold text-caramel-500 uppercase tracking-widest font-mono">
               Freshly Sliced in Parle Point, Surat · Gujarat
             </span>
-            <h1 className="font-display text-4xl sm:text-5xl font-extrabold text-cocoa-800 tracking-tight leading-tight">
-              Homemade Chocolate Fudge in Surat
+            <h1 className="font-display font-extrabold tracking-tight leading-tight">
+              <span className="block text-2xl sm:text-4xl text-[#ffffff] mb-1">
+                Homemade{' '}
+              </span>
+              <span className="block text-4xl sm:text-5xl">
+                <span className="text-[#aa6a46]">Chocolate Fudge</span>{' '}
+                <span className="text-[#ffffff]">in Surat</span>
+              </span>
             </h1>
-            <p className="text-base text-cocoa-600 leading-relaxed">
+            <p className="text-base text-cocoa-600 leading-relaxed max-w-2xl mx-auto">
               Freshly prepared, velvety smooth, 100% eggless chocolate fudge sold exclusively in
               premium 250g foil packs across Surat, Gujarat. Call or WhatsApp to order and pick up
               fresh from our kitchen in Parle Point!
