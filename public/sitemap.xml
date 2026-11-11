@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fudgekosurat.jmmweb-india.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://fudgekosurat.jmmweb-india.com/assets/og-fudgeko.jpg</image:loc>
+      <image:title>Fudgeko Homemade Chocolate Fudge in Surat, Gujarat</image:title>
+      <image:caption>Freshly sliced 100% eggless homemade chocolate fudge made to order in Parle Point, Surat.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fudgekosurat.jmmweb-india.com/fudgko/f1.png</image:loc>
+      <image:title>Fudgeko 250g Foil Pack Chocolate Fudge Surat</image:title>
+      <image:caption>Homemade eggless chocolate fudge in Surat, Gujarat.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fudgekosurat.jmmweb-india.com/assets/fudgeko_packaging.jpg</image:loc>
+      <image:title>Fudgeko 250g Foil Container Pack Surat</image:title>
+      <image:caption>Hygienic 250g aluminum foil tray pack of Fudgeko chocolate fudge for pickup in Surat.</image:caption>
+    </image:image>
+  </url>
+</urlset>

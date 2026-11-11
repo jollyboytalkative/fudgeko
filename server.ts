@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const PORT = Number(process.env.PORT) || 3000;
-const CANONICAL_PLACEHOLDER = 'https://fudgeko.ai.studio';
+const CANONICAL_PLACEHOLDER = 'https://fudgekosurat.jmmweb-india.com';
 
 interface PlacesRestReview {
   rating?: number;
@@ -40,16 +40,16 @@ interface PlacesRestResponse {
 }
 
 function resolveSiteOrigin(req: express.Request): string {
-  const envUrl = process.env.APP_URL?.trim();
-  if (envUrl && /^https?:\/\//i.test(envUrl)) {
-    return envUrl.replace(/\/+$/, '');
-  }
   const forwardedHost = req.get('x-forwarded-host')?.split(',')[0]?.trim();
   const host = forwardedHost || req.get('host');
   const forwardedProto = req.get('x-forwarded-proto')?.split(',')[0]?.trim();
   const proto = forwardedProto || req.protocol || 'https';
   if (host && !host.startsWith('127.0.0.1') && !host.startsWith('localhost')) {
     return `${proto}://${host}`;
+  }
+  const envUrl = process.env.APP_URL?.trim();
+  if (envUrl && /^https?:\/\//i.test(envUrl)) {
+    return envUrl.replace(/\/+$/, '');
   }
   return CANONICAL_PLACEHOLDER;
 }
@@ -79,13 +79,18 @@ async function startServer(): Promise<void> {
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>${origin}/fudgko/f1.png</image:loc>
+      <image:loc>${origin}/assets/og-fudgeko.jpg</image:loc>
       <image:title>Fudgeko Homemade Chocolate Fudge in Surat, Gujarat</image:title>
       <image:caption>Freshly sliced 100% eggless homemade chocolate fudge made to order in Parle Point, Surat.</image:caption>
     </image:image>
     <image:image>
-      <image:loc>${origin}/assets/fudgeko_packaging.jpg</image:loc>
+      <image:loc>${origin}/fudgko/f1.png</image:loc>
       <image:title>Fudgeko 250g Foil Pack Chocolate Fudge Surat</image:title>
+      <image:caption>Homemade eggless chocolate fudge in Surat, Gujarat.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>${origin}/assets/fudgeko_packaging.jpg</image:loc>
+      <image:title>Fudgeko 250g Foil Container Pack Surat</image:title>
       <image:caption>Hygienic 250g aluminum foil tray pack of Fudgeko chocolate fudge for pickup in Surat.</image:caption>
     </image:image>
   </url>
@@ -217,7 +222,17 @@ async function startServer(): Promise<void> {
   } else {
     const distDir = path.resolve(process.cwd(), 'dist');
     const distIndexPath = path.join(distDir, 'index.html');
-    app.use(express.static(distDir, { index: false }));
+    app.use(
+      express.static(distDir, {
+        index: false,
+        maxAge: '1d',
+        setHeaders: (res, filePath) => {
+          if (/\.(jpe?g|png|webp|ico|svg)$/i.test(filePath)) {
+            res.setHeader('Cache-Control', 'public, max-age=86400');
+          }
+        },
+      }),
+    );
     app.get('*', async (req, res, next) => {
       try {
         const template = await fs.readFile(distIndexPath, 'utf8');

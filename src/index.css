@@ -41,25 +41,15 @@
 
 .text-cocoa-900,
 .text-cocoa-800,
-.text-cocoa-700,
-.text-gray-900,
-.text-gray-800,
-.text-gray-700,
-.text-zinc-900,
-.text-zinc-800,
-.text-zinc-700 {
+.text-cocoa-700 {
   color: #f7f3f0 !important;
 }
 
-.text-cocoa-600,
-.text-gray-600,
-.text-zinc-600 {
+.text-cocoa-600 {
   color: #dbd3cc !important;
 }
 
-.text-cocoa-500,
-.text-gray-500,
-.text-zinc-500 {
+.text-cocoa-500 {
   color: #aa6a46 !important;
 }
 
@@ -80,11 +70,6 @@ svg.text-cocoa-700 {
   stroke: #aa6a46 !important;
 }
 
-button.bg-cocoa-800,
-a.bg-cocoa-800,
-.cursor-pointer.bg-cocoa-800,
-#place-order-submit-btn,
-button[type="submit"],
 button.bg-caramel-500,
 a.bg-caramel-500,
 .cursor-pointer.bg-caramel-500 {
@@ -97,11 +82,6 @@ a.bg-caramel-500,
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-button.bg-cocoa-800:hover,
-a.bg-cocoa-800:hover,
-.cursor-pointer.bg-cocoa-800:hover,
-#place-order-submit-btn:hover,
-button[type="submit"]:hover,
 button.bg-caramel-500:hover,
 a.bg-caramel-500:hover,
 .cursor-pointer.bg-caramel-500:hover {
@@ -111,172 +91,22 @@ a.bg-caramel-500:hover,
   box-shadow: 0 10px 25px #aa6a4666 !important;
 }
 
-button.bg-cocoa-800 *,
-a.bg-cocoa-800 *,
-.cursor-pointer.bg-cocoa-800 *,
-#place-order-submit-btn *,
-button[type="submit"] *,
 button.bg-caramel-500 *,
 a.bg-caramel-500 *,
 .cursor-pointer.bg-caramel-500 * {
   color: #120704 !important;
 }
 
-button.bg-cocoa-800 svg,
-a.bg-cocoa-800 svg,
-.cursor-pointer.bg-cocoa-800 svg,
-#place-order-submit-btn svg,
-button[type="submit"] svg,
 button.bg-caramel-500 svg,
 a.bg-caramel-500 svg,
 .cursor-pointer.bg-caramel-500 svg {
   stroke: #120704 !important;
 }
 
-div.bg-cocoa-800,
-span.bg-cocoa-800 {
-  color: #f7f3f0 !important;
-  background-color: #1a0f0a !important;
-  border: 1px solid #aa6a4640 !important;
-}
-
-div.bg-cocoa-800 *,
-span.bg-cocoa-800 * {
-  color: #f7f3f0 !important;
-}
-
-div.bg-cocoa-800 a,
-span.bg-cocoa-800 a {
-  color: #aa6a46 !important;
-}
-
-div.bg-cocoa-800 a:hover,
-span.bg-cocoa-800 a:hover {
-  text-decoration: underline;
-  color: #c58963 !important;
-}
-
-div.bg-cocoa-800 .text-caramel-400,
-span.bg-cocoa-800 .text-caramel-400 {
-  color: #c58963 !important;
-}
-
-div.bg-cocoa-800 .text-caramel-500,
-span.bg-cocoa-800 .text-caramel-500 {
-  color: #aa6a46 !important;
-}
-
-div.bg-cocoa-800 svg,
-span.bg-cocoa-800 svg {
-  stroke: #aa6a46 !important;
-}
-
-input[type="text"],
-input[type="tel"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="datetime-local"],
-textarea,
-select {
-  color: #fff !important;
-  background-color: #120704 !important;
-  border: 1px solid #aa6a4659 !important;
-  padding: 0.75rem 1rem !important;
-  font-family: Inter, sans-serif !important;
-  font-size: 0.875rem !important;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #f7f3f059 !important;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #aa6a46 !important;
-  outline: none !important;
-  box-shadow: 0 0 0 4px #aa6a4640 !important;
-}
-
-.bg-green-50,
-.bg-green-100 {
-  background-color: #10351e80 !important;
-  border: 1px solid #34d3994d !important;
-}
-
-.text-green-800,
-.text-green-700 {
-  color: #34d399 !important;
-}
-
-.bg-red-50,
-.bg-red-100 {
-  background-color: #45121280 !important;
-  border: 1px solid #f871714d !important;
-}
-
-.text-red-800,
-.text-red-700,
-.text-red-600 {
-  color: #f87171 !important;
-}
-
 .bg-amber-50,
 .bg-amber-100 {
   background-color: #aa6a4626 !important;
   border: 1px solid #aa6a464d !important;
-}
-
-.text-amber-800,
-.text-amber-700 {
-  color: #c58963 !important;
-}
-
-.bg-blue-50,
-.bg-blue-100 {
-  background-color: #1e3a8a66 !important;
-  border: 1px solid #60a5fa4d !important;
-}
-
-.text-blue-800,
-.text-blue-700 {
-  color: #60a5fa !important;
-}
-
-.bg-purple-50,
-.bg-purple-100 {
-  background-color: #581c8766 !important;
-  border: 1px solid #c084fc4d !important;
-}
-
-.text-purple-800,
-.text-purple-700 {
-  color: #c084fc !important;
-}
-
-.bg-teal-50,
-.bg-teal-100 {
-  background-color: #0d948833 !important;
-  border: 1px solid #2dd4bf4d !important;
-}
-
-.text-teal-800,
-.text-teal-700 {
-  color: #2dd4bf !important;
-}
-
-.bg-emerald-50,
-.bg-emerald-100 {
-  background-color: #065f4666 !important;
-  border: 1px solid #34d3994d !important;
-}
-
-.text-emerald-800,
-.text-emerald-700,
-.text-emerald-600 {
-  color: #34d399 !important;
 }
 
 [class*="text-caramel-100"],
@@ -292,19 +122,6 @@ select:focus {
 [class*="text-caramel-100/6"],
 [class*="text-caramel-100/7"] {
   color: #f7f3f0b3 !important;
-}
-
-[class*="text-caramel-100/4"],
-[class*="text-caramel-100/5"] {
-  color: #f7f3f08c !important;
-}
-
-.bg-zinc-100,
-.bg-zinc-50,
-.bg-gray-100,
-.bg-gray-50 {
-  background-color: #120704 !important;
-  border-color: #aa6a4633 !important;
 }
 
 footer {

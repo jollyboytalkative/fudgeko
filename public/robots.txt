@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fudgekosurat.jmmweb-india.com/sitemap.xml
