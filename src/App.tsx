@@ -91,7 +91,10 @@ export default function App() {
             </div>
 
             <div className="pt-1">
-              <span className="text-xs font-extrabold !text-black bg-amber-100/50 border border-amber-200/60 px-4 py-2 rounded-full inline-flex items-center gap-1.5 tracking-wide font-sans shadow-xs">
+              <span
+                id="surat-delivery-notice"
+                className="surat-delivery-notice text-xs font-extrabold !text-[#120704] bg-[#f3d59b]/90 border border-[#fde68a]/85 px-4 py-2 rounded-full inline-flex items-center gap-1.5 tracking-wide font-sans shadow-xs"
+              >
                 📍 Exclusively in Surat, Gujarat — We don&apos;t deliver outside Surat for now
               </span>
             </div>

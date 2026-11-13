@@ -295,9 +295,29 @@ footer svg {
   z-index: 1 !important;
 }
 
+@keyframes noticeFadeHighlight {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 22px rgba(251, 191, 36, 0.42), 0 0 0 2px rgba(253, 230, 138, 0.35);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.28;
+    box-shadow: 0 0 6px rgba(251, 191, 36, 0.08);
+    transform: scale(0.985);
+  }
+}
+
+.surat-delivery-notice {
+  animation: 2.2s ease-in-out infinite noticeFadeHighlight;
+  will-change: opacity, transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   #order-form-card,
-  #order-form-card::before {
+  #order-form-card::before,
+  .surat-delivery-notice {
     animation: none !important;
   }
 }
