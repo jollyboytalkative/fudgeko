@@ -1,4 +1,4 @@
-import { Award, ExternalLink, Layers, Leaf, ShieldCheck } from 'lucide-react';
+import { Award, ExternalLink, Layers, ShieldCheck } from 'lucide-react';
 import { PACKAGING_IMAGE_URL, PRODUCT_INFO } from '../types';
 import { trackEvent } from '../utils/analytics';
 import { Carousel } from './Carousel';
@@ -54,54 +54,34 @@ export function ProductDetails() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
-            <div className="space-y-4">
-              <div className="flex items-center gap-2 border-b border-caramel-100 pb-2">
-                <Leaf className="w-5 h-5 text-green-600" />
-                <h3 className="font-display text-base font-bold text-cocoa-800">
-                  Ingredients List
-                </h3>
-              </div>
-              <ul className="space-y-2">
-                {PRODUCT_INFO.ingredients.map((item, idx) => (
-                  <li key={idx} className="flex items-center gap-2.5 text-sm text-cocoa-800">
-                    <div className="w-1.5 h-1.5 rounded-full bg-caramel-500" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+          <div className="space-y-4 pt-4">
+            <div className="flex items-center gap-2 border-b border-caramel-100 pb-2">
+              <ShieldCheck className="w-5 h-5 text-caramel-500" />
+              <h3 className="font-display text-base font-bold text-cocoa-800">
+                Quality Standards
+              </h3>
             </div>
-
-            <div className="space-y-4">
-              <div className="flex items-center gap-2 border-b border-caramel-100 pb-2">
-                <ShieldCheck className="w-5 h-5 text-caramel-500" />
-                <h3 className="font-display text-base font-bold text-cocoa-800">
-                  Quality Standards
-                </h3>
-              </div>
-              <div className="space-y-3.5">
-                <div className="flex gap-2.5">
-                  <Award className="w-4.5 h-4.5 text-caramel-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="text-xs font-bold text-cocoa-800 uppercase tracking-wider">
-                      Fresh-to-Order
-                    </h4>
-                    <p className="text-xs text-cocoa-600">
-                      We do not stock fudge. It is made only after your order is confirmed.
-                    </p>
-                  </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex gap-2.5">
+                <Award className="w-4.5 h-4.5 text-caramel-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-xs font-bold text-cocoa-800 uppercase tracking-wider">
+                    Fresh-to-Order
+                  </h4>
+                  <p className="text-xs text-cocoa-600">
+                    We do not stock fudge. It is made only after your order is confirmed.
+                  </p>
                 </div>
-                <div className="flex gap-2.5">
-                  <ShieldCheck className="w-4.5 h-4.5 text-caramel-500 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <h4 className="text-xs font-bold text-cocoa-800 uppercase tracking-wider">
-                      Hygienic Home Kitchen
-                    </h4>
-                    <p className="text-xs text-cocoa-600">
-                      Prepared individually with sanitized tools, filtered water, and top-grade
-                      dairy.
-                    </p>
-                  </div>
+              </div>
+              <div className="flex gap-2.5">
+                <ShieldCheck className="w-4.5 h-4.5 text-caramel-500 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-xs font-bold text-cocoa-800 uppercase tracking-wider">
+                    Hygienic Home Kitchen
+                  </h4>
+                  <p className="text-xs text-cocoa-600">
+                    Prepared individually with sanitized tools, filtered water, and top-grade dairy.
+                  </p>
                 </div>
               </div>
             </div>

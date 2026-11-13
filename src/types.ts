@@ -1,12 +1,6 @@
 export const PRODUCT_INFO = {
   pricePerPack: 300,
   packSizeGrams: 250,
-  ingredients: [
-    'Premium Dark Chocolate',
-    'Condensed Milk',
-    'Pure Unsalted Butter',
-    'Stirring with: Love & Homemade Care',
-  ],
   description:
     'Fudgeko is our signature rich, creamy, and ultra-smooth homemade chocolate fudge. Freshly whipped in a home kitchen under pristine hygienic conditions. It melts in your mouth with an intense chocolate punch that will leave you wanting more!',
   contactNumber: '9825905107',
