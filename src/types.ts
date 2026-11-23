@@ -1,5 +1,5 @@
 export const PRODUCT_INFO = {
-  pricePerPack: 300,
+  pricePerPack: 400,
   packSizeGrams: 250,
   description:
     'Fudgeko is our signature rich, creamy, and ultra-smooth homemade chocolate fudge. Freshly whipped in a home kitchen under pristine hygienic conditions. It melts in your mouth with an intense chocolate punch that will leave you wanting more!',

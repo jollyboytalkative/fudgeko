@@ -22,7 +22,7 @@ const SURAT_FAQS: FaqItem[] = [
   {
     question: 'What is the price and pack size of Fudgeko chocolate fudge in Surat?',
     answer:
-      'Fudgeko is packed in hygienic 250g aluminum foil trays priced at ₹300 per 250g pack. For larger orders such as 1 kg, you receive 4 freshly sealed 250g packs.',
+      'Fudgeko is packed in hygienic 250g aluminum foil trays priced at ₹400 per 250g pack. For larger orders such as 1 kg, you receive 4 freshly sealed 250g packs.',
   },
   {
     question: 'Do you deliver outside Surat or across Gujarat?',
